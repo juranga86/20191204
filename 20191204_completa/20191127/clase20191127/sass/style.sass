@@ -1,0 +1,36 @@
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+
+@mixin titulo
+    font-family: Arial
+    font-size: 150px
+    font-weight: bold
+    color: orange
+
+
+.fondo 
+    background-color:#C2F0F8
+    color: $primary-color salmon
+    font: $font-stack
+    
+body 
+    font: 100% Helvetica
+    color: blue
+    
+a
+    color: blue
+    &:visited
+        color: green
+    &:hover
+        color: red
+    &:active 
+        color: yellow
+
+.titulo
+    @include titulo
+
+.titulo-rojo
+    @extend .titulo
+    background-color: red
+
+
